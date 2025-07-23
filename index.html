@@ -3,11 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>portfolio ig</title>
     <link rel="stylesheet" href="styleindex.css" />
+    <script src="script.js"></script>
   </head>
   <body>
     <h1 id="nametag">Slincess</h1>
+
+    <button id="visablebtn">visable</button>
 
     <div id="abtme">
       <p id="aboutmet">about me</p>
@@ -16,12 +19,23 @@
         games, programs,and websites now :D.<br />
         im currently learning html, css, and soon javascript.<br />
         I love music I love it so much I host my own music service called
-        slincify what a orginal name :D.
+        slincify what an orginal name :D.
       </p>
       <p id="abtp2">
         if you need a pro programmener you can contact me on my socials.
       </p>
     </div>
+
+    <script>
+      document
+        .getElementById("visablebtn")
+        .addEventListener("click", function () {
+          const abtdiv = document.getElementById("abtme");
+          abtdiv.style.display =
+            abtdiv.style.display == "none" ? "block" : "none";
+        });
+    </script>
+
     <div id="skills">
       <p id="skillstext">
         <span id="skilltextheader">my skills:</span><br />
@@ -32,6 +46,7 @@
         CSS,<br />
       </p>
     </div>
+
     <div id="interest">
       <p id="interestt">
         <span id="interesttextheader">interest are:</span><br />

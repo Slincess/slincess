@@ -1,5 +1,5 @@
       body {
-        background-color: black;
+        background-image: url(mainpic/bg.png);
         background-repeat: no-repeat;
         background-size:cover;
         background-attachment:fixed;
@@ -128,3 +128,43 @@
         left: 50%;
         transform: translate(80%,290%);
       }
+
+      @media screen and (max-width: 768px) {
+  #abtme, #interest, #skills {
+    position: static;
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+  }
+
+  #abtp1, #abtp2, #aboutmet, #nametag, #interestt, #skillstext {
+    font-size: 100%; /* kleinere Schrift auf kleineren Bildschirmen */
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  #aboutmet {
+    font-size: 150%;
+  }
+
+  #nametag {
+    font-size: 200%;
+  }
+
+  #interest, #skills {
+    transform: none;
+  }
+
+  #steamicon, #githubicon, #discordicon {
+    position: static;
+    width: 20%;
+    margin: 10px;
+    transform: none;
+    display: inline-block;
+  }
+
+  #icons {
+    position: static;
+    text-align: center;
+  }
+}
