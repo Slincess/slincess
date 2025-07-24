@@ -164,6 +164,13 @@
        color: whitesmoke; 
        height: 40px;
        width: 100px;
+       cursor: pointer;
+       transition: background-color 0.2s ease;
+       
+      }
+
+      .repo:hover {
+        background-color: #111111;
       }
 
       #projects{
@@ -184,13 +191,19 @@
         border-color: whitesmoke;
         margin-bottom: 20px;
         margin-top: 20px;
+          cursor: pointer;
+  transition: background-color 0.2s ease;
       }
 
-      #repodes{
+      .repo:hover {
+  background-color: #111111;
+}
+
+      .repodes{
         margin-left: 5px;
       }
 
-      #repotitle{
+      .repotitle{
         margin-left: 5px;
       }
 

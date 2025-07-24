@@ -16,42 +16,52 @@
     </div>
 
     <script>
-      document
-        .getElementById("abouttmebtn")
-        .addEventListener("click", function () {
-          const abtdiv = document.getElementById("allabt");
-          const thoughtsdiv = document.getElementById("thoughts");
-          const projectsdiv = document.getElementById("projects");
-          thoughtsdiv.style.display = "none";
-          projectsdiv.style.display = "none";
-          abtdiv.style.display = "block";
-        });
-    </script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document
+          .getElementById("abouttmebtn")
+          .addEventListener("click", function () {
+            const abtdiv = document.getElementById("allabt");
+            const thoughtsdiv = document.getElementById("thoughts");
+            const projectsdiv = document.getElementById("projects");
+            thoughtsdiv.style.display = "none";
+            projectsdiv.style.display = "none";
+            abtdiv.style.display = "block";
+          });
 
-    <script>
-      document
-        .getElementById("thoughtsbtn")
-        .addEventListener("click", function () {
-          const abtdiv = document.getElementById("allabt");
-          const thoughtsdiv = document.getElementById("thoughts");
-          const projectsdiv = document.getElementById("projects");
-          abtdiv.style.display = "none";
-          projectsdiv.style.display = "none";
-          thoughtsdiv.style.display = "block";
-        });
-    </script>
+        document
+          .getElementById("thoughtsbtn")
+          .addEventListener("click", function () {
+            const abtdiv = document.getElementById("allabt");
+            const thoughtsdiv = document.getElementById("thoughts");
+            const projectsdiv = document.getElementById("projects");
+            abtdiv.style.display = "none";
+            projectsdiv.style.display = "none";
+            thoughtsdiv.style.display = "block";
+          });
 
-    <script>
-      document
-        .getElementById("projectsbtn")
-        .addEventListener("click", function () {
-          const abtdiv = document.getElementById("allabt");
-          const thoughtsdiv = document.getElementById("thoughts");
-          const projectsdiv = document.getElementById("projects");
-          abtdiv.style.display = "none";
-          thoughtsdiv.style.display = "none";
-          projectsdiv.style.display = "block";
-        });
+        document
+          .getElementById("projectsbtn")
+          .addEventListener("click", function () {
+            const abtdiv = document.getElementById("allabt");
+            const thoughtsdiv = document.getElementById("thoughts");
+            const projectsdiv = document.getElementById("projects");
+            abtdiv.style.display = "none";
+            thoughtsdiv.style.display = "none";
+            projectsdiv.style.display = "block";
+          });
+
+        document
+          .getElementById("repogenrefinder")
+          .addEventListener("click", function () {
+            window.open("https://github.com/Slincess/Last.fm-Genre-finder");
+          });
+
+        document
+          .getElementById("repoSLAsset")
+          .addEventListener("click", function () {
+            window.open("https://github.com/Slincess/SLAssets");
+          });
+      });
     </script>
 
     <div id="allabt">
@@ -122,16 +132,16 @@
     </div>
 
     <div id="projects">
-      <div class="repo">
-        <h3 id="repotitle">Last.fm-Genre-finder</h3>
-        <p id="repodes">
+      <div id="repogenrefinder" class="repo">
+        <h3 class="repotitle">Last.fm-Genre-finder</h3>
+        <p class="repodes">
           really easy to use genre finder for your music library using Last.fm
           API (c#)
         </p>
       </div>
-      <div class="repo">
-        <h3 id="repotitle">SLAssets</h3>
-        <p id="repodes">a search engine for your owned Gameassets (c#)</p>
+      <div id="repoSLAsset" class="repo">
+        <h3 class="repotitle">SLAssets</h3>
+        <p class="repodes">a search engine for your owned Gameassets (c#)</p>
       </div>
     </div>
   </body>
