@@ -9,66 +9,130 @@
   </head>
   <body>
     <h1 id="nametag">Slincess</h1>
-
-    <button id="visablebtn">visable</button>
-
-    <div id="abtme">
-      <p id="aboutmet">about me</p>
-      <p id="abtp1" class="abtmetext">
-        hellooo im slincess. Im a c# developer and code in c# I guess, I make
-        games, programs,and websites now :D.<br />
-        im currently learning html, css, and soon javascript.<br />
-        I love music I love it so much I host my own music service called
-        slincify what an orginal name :D.
-      </p>
-      <p id="abtp2">
-        if you need a pro programmener you can contact me on my socials.
-      </p>
+    <div id="buttons">
+      <button class="tabbtn" id="abouttmebtn">about me</button>
+      <button class="tabbtn" id="thoughtsbtn">thoughts</button>
+      <button class="tabbtn" id="projectsbtn">projects</button>
     </div>
 
     <script>
       document
-        .getElementById("visablebtn")
+        .getElementById("abouttmebtn")
         .addEventListener("click", function () {
-          const abtdiv = document.getElementById("abtme");
-          abtdiv.style.display =
-            abtdiv.style.display == "none" ? "block" : "none";
+          const abtdiv = document.getElementById("allabt");
+          const thoughtsdiv = document.getElementById("thoughts");
+          const projectsdiv = document.getElementById("projects");
+          thoughtsdiv.style.display = "none";
+          projectsdiv.style.display = "none";
+          abtdiv.style.display = "block";
         });
     </script>
 
-    <div id="skills">
-      <p id="skillstext">
-        <span id="skilltextheader">my skills:</span><br />
-        c#,<br />
-        Unity,<br />
-        photo editing,<br />
-        c++ &lpar;eps32&rpar; HTML,<br />
-        CSS,<br />
+    <script>
+      document
+        .getElementById("thoughtsbtn")
+        .addEventListener("click", function () {
+          const abtdiv = document.getElementById("allabt");
+          const thoughtsdiv = document.getElementById("thoughts");
+          const projectsdiv = document.getElementById("projects");
+          abtdiv.style.display = "none";
+          projectsdiv.style.display = "none";
+          thoughtsdiv.style.display = "block";
+        });
+    </script>
+
+    <script>
+      document
+        .getElementById("projectsbtn")
+        .addEventListener("click", function () {
+          const abtdiv = document.getElementById("allabt");
+          const thoughtsdiv = document.getElementById("thoughts");
+          const projectsdiv = document.getElementById("projects");
+          abtdiv.style.display = "none";
+          thoughtsdiv.style.display = "none";
+          projectsdiv.style.display = "block";
+        });
+    </script>
+
+    <div id="allabt">
+      <div id="abtme">
+        <p id="aboutmet">about me</p>
+        <p id="abtp1" class="abtmetext">
+          hellooo im slincess. Im a c# developer and code in c# I guess, I make
+          games, programs,and websites now :D.<br />
+          im currently learning html, css, and soon javascript.<br />
+          I love music I love it so much I host my own music service called
+          slincify what an orginal name :D.
+        </p>
+        <p id="abtp2">
+          if you need a pro programmener you can contact me on my socials.
+        </p>
+      </div>
+      <div id="skills">
+        <p id="skillstext">
+          <span id="skilltextheader">my skills:</span><br />
+          c#,<br />
+          Unity,<br />
+          photo editing,<br />
+          c++ &lpar;eps32&rpar; HTML,<br />
+          CSS,<br />
+        </p>
+      </div>
+      <div id="interest">
+        <p id="interestt">
+          <span id="interesttextheader">interest are:</span><br />
+          politcs kinda,<br />
+          history,<br />
+          philosophie,<br />
+          religion,<br />
+          programming,<br />
+          electronic programming,<br />
+          home labing.
+        </p>
+      </div>
+      <div id="socialbuttondiv">
+        <a href="https://steamcommunity.com/profiles/76561199201124902/"
+          ><img id="steamicon" src="mainpic/steamiclon.png" alt=""
+        /></a>
+        <a href="https://github.com/Slincess"
+          ><img id="githubicon" src="mainpic/githubicon.png" alt=""
+        /></a>
+        <a href="https://discord.com/users/682964550856736810"
+          ><img id="discordicon" src="mainpic/discordicon.png" alt=""
+        /></a>
+      </div>
+    </div>
+
+    <div id="thoughts">
+      <p class="thoughtsp">
+        no one will remember what grave you will be laying in,<br />just like
+        other millions and billions died before us. thats makes us
+        worhtless—unless we left something behind. otherwise you are just a
+        walking meatball.
+      </p>
+      <p class="thoughtsp">
+        people born into a meaningless world and die while searching for it.
+      </p>
+      <p class="thoughtsp">
+        people came into the world without purpose, instead of accepting that,
+        we created God, religion, art, music, and literature—yet some of us
+        still fall through all that fragile glass of meaning and live a
+        meaningless life.
       </p>
     </div>
 
-    <div id="interest">
-      <p id="interestt">
-        <span id="interesttextheader">interest are:</span><br />
-        politcs kinda,<br />
-        history,<br />
-        philosophie,<br />
-        religion,<br />
-        programming,<br />
-        electronic programming,<br />
-        home labing.
-      </p>
-    </div>
-    <div id="socialbuttondiv">
-      <a href="https://steamcommunity.com/profiles/76561199201124902/"
-        ><img id="steamicon" src="mainpic/steamiclon.png" alt=""
-      /></a>
-      <a href="https://github.com/Slincess"
-        ><img id="githubicon" src="mainpic/githubicon.png" alt=""
-      /></a>
-      <a href="https://discord.com/users/682964550856736810"
-        ><img id="discordicon" src="mainpic/discordicon.png" alt=""
-      /></a>
+    <div id="projects">
+      <div class="repo">
+        <h3 id="repotitle">Last.fm-Genre-finder</h3>
+        <p id="repodes">
+          really easy to use genre finder for your music library using Last.fm
+          API (c#)
+        </p>
+      </div>
+      <div class="repo">
+        <h3 id="repotitle">SLAssets</h3>
+        <p id="repodes">a search engine for your owned Gameassets (c#)</p>
+      </div>
     </div>
   </body>
 </html>
