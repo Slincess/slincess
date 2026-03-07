@@ -1,0 +1,19 @@
+{
+  "panelInfos": [
+    {
+      "IconLink": "",
+      "description": "really easy to use genre finder for your music library using Last.fm API",
+      "URL": "https://github.com/Slincess/Last.fm-Genre-finder"
+    },
+    {
+      "IconLink": "",
+      "description": "official client for simac",
+      "URL": "https://github.com/Slincess/dera"
+    },
+    {
+      "IconLink": "",
+      "description": "self hosted messaging service",
+      "URL": "https://github.com/Slincess/simac-server"
+    }
+  ]
+}
