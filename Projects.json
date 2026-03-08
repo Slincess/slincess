@@ -15,5 +15,19 @@
       "description": "self hosted messaging service",
       "URL": "https://github.com/Slincess/simac-server"
     }
+  ],
+  "Tools": [
+    "Unity",
+    "Teams",
+    "Vs/Vscode",
+    "Blender",
+    "Proxmox",
+    "Git/Github",
+    "Linux/Linux(CLI)",
+  ],
+  "Languages": [
+    "C#",
+    "C++(esp32)",
+    "Html/css"
   ]
 }
