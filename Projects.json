@@ -19,6 +19,11 @@
       "IconLink": "https://img.itch.zone/aW1hZ2UvMzM3MTE0NS8yMDEzMTY1MC5wbmc=/347x500/PHrOHo.png",
       "description": "tower defense game",
       "URL": "https://slincess.itch.io/casteld"
+    },
+    {
+      "IconLink": "",
+      "description": "Desktop Link Widget for easy access to any website",
+      "URL": "https://github.com/Slincess/DLM"
     }
   ],
   "Tools": [
