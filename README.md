@@ -1,2 +1,1 @@
-yo yo I can program... I think idk <br/>
-<a href="https://www.slincess.com/">website</a>
+<a href="https://www.slincess.com/">game-like portfolio website</a>
